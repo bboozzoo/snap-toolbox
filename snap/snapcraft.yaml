@@ -19,7 +19,7 @@ architectures:
   - build-on: ppc64el
   - build-on: riscv64
 
-base: core22
+base: core24
 
 environment:
   PATH:            $SNAP/usr/sbin:$SNAP/usr/bin:$SNAP/sbin:$SNAP/bin:$PATH
@@ -258,7 +258,7 @@ parts:
     source: https://github.com/mobile-shell/mosh.git
     source-type: git
     stage-packages:
-      - libprotobuf23
+      - libprotobuf32
     organize:
       usr/local/bin/: usr/bin/
     stage:
@@ -314,7 +314,6 @@ build-packages:
   - libudev-dev
   - pkg-config
   - protobuf-compiler
-  - python2.7
   - texinfo
   - wget
   - zlib1g
